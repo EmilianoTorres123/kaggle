@@ -20,3 +20,6 @@ print(reviews_country_r1_r2_r3)
 print('\nsub-dataset row 1,2,3\n select  country from winesmag\n')
 reviews_country_r1_r2_r3=reviews.iloc[[0,1,2],[0,1]]
 print(reviews_country_r1_r2_r3)
+
+selected_columns = reviews.loc[:, ['taster_name', 'taster_twitter_handle', 'points']]
+print(selected_columns)
